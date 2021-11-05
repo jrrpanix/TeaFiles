@@ -2,7 +2,7 @@
 TeaFiles (updated for CMake)
 
 * __About__
-  * This repository is version of TeaFiiles from </br>
+  * This repository is version of C++ TeaFiiles from </br>
     * http://discretelogics.com/teafiles/ </br>
   * updates to work using cmake </br>
   * puts all of the code into a single directory </br>
