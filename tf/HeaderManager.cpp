@@ -78,7 +78,7 @@ shared_ptr<ReadContext> HeaderManager::ReadHeader(FormattedReader *r)
 
     return rc;
   }
-  catch(FileFormatException)
+  catch(FileFormatException &)
   {
     throw;
   }

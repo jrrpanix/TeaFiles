@@ -8,6 +8,13 @@ if( NOT CMAKE_BUILD_TYPE )
   set( CMAKE_BUILD_TYPE Release )
 endif()
 
+# gcc compiler flags
+if( CMAKE_COMPILER_IS_GNUCXX)
+  add_compile_options( -ggdb -Wall -Wextra -Werror -mavx2 -std=c++17 -m64 )
+#  set( CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
+endif()
+
+
 # use root directory as include directory
 set( CMAKE_INCLUDE_CURRENT_DIR ON )
 #include_directories("/opt/intel/mkl/include" "/usr/local/include/hdf5" )
