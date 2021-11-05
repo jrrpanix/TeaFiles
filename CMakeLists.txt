@@ -58,4 +58,7 @@ target_link_libraries(CreateTicks teaf )
 add_executable(Analyze ex/Analyze.cpp )
 target_link_libraries(Analyze teaf )
 
+add_executable(Sum ex/Sum.cpp )
+target_link_libraries(Sum teaf )
+
 
